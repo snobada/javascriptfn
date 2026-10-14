@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String and Math Functions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript Functions Demonstration</h1>
+        <p>Explore String Functions and Math Functions</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>String Functions</h2>
+
+            <label for="textInput">Enter a string:</label>
+            <input type="text" id="textInput"
+                   placeholder="Example: Hello JavaScript Hello">
+
+            <label for="wordInput">Enter a word:</label>
+            <input type="text" id="wordInput"
+                   placeholder="Example: Hello">
+
+            <label for="replaceInput">Replace with:</label>
+            <input type="text" id="replaceInput"
+                   placeholder="Example: Hi">
+
+            <div class="buttons">
+                <button onclick="stringLength()">Length</button>
+                <button onclick="occurrences()">First / Last Index</button>
+                <button onclick="searchWord()">Search Word</button>
+                <button onclick="sliceText()">Slice</button>
+                <button onclick="substringText()">Substring</button>
+                <button onclick="substrText()">Substr</button>
+                <button onclick="replaceWord()">Replace</button>
+                <button onclick="upperCase()">Uppercase</button>
+                <button onclick="lowerCase()">Lowercase</button>
+            </div>
+
+            <div class="extra-inputs">
+                <label for="start">Start index:</label>
+                <input type="number" id="start" value="0">
+
+                <label for="end">End index / length:</label>
+                <input type="number" id="end" value="5">
+            </div>
+
+            <div id="stringResult" class="result">
+                String results will appear here.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Math Functions</h2>
+
+            <label for="num1">Enter first number:</label>
+            <input type="number" id="num1" value="25">
+
+            <label for="num2">Enter second number:</label>
+            <input type="number" id="num2" value="4">
+
+            <label for="angle">Angle in degrees:</label>
+            <input type="number" id="angle" value="30">
+
+            <div class="buttons">
+                <button onclick="power()">Power</button>
+                <button onclick="squareRoot()">Square Root</button>
+                <button onclick="roundNumber()">Round</button>
+                <button onclick="ceilNumber()">Ceiling</button>
+                <button onclick="floorNumber()">Floor</button>
+                <button onclick="absoluteNumber()">Absolute</button>
+                <button onclick="sine()">Sine</button>
+                <button onclick="cosine()">Cosine</button>
+                <button onclick="minimum()">Minimum</button>
+                <button onclick="maximum()">Maximum</button>
+                <button onclick="randomNumber()">Random Number</button>
+            </div>
+
+            <div id="mathResult" class="result">
+                Math results will appear here.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created using HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
